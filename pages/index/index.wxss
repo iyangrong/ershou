@@ -84,7 +84,7 @@
   padding: 0rpx;
   background-color: #c5df6c;
   color: white;
-  border:none;
+  border: none;
 }
 .item-middle {
   display: flex;
