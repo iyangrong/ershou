@@ -1,0 +1,33 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="header" style="margin-top:{{height}}px" >
+  <text style='font-size:19.5px; color:#bfc8c8'>#选择标签</text>
+  <view class='type'>
+    <view class="li {{labelList[0] ? 'color2' : 'color1'}}"  bindtap='choose1' data-text='学习用品'>学习用品</view>
+    <view class="li {{labelList[1] ? 'color2' : 'color1'}}" bindtap='choose2' data-text='电子产品'>电子产品</view>
+    <view class="li {{labelList[2] ? 'color2' : 'color1'}}" bindtap='choose3' data-text='生活用品'>生活用品</view>
+    <view class="li {{labelList[3] ? 'color2' : 'color1'}}" bindtap='choose4' data-text='体育用品'>体育用品</view>
+    <view class="li {{labelList[4] ? 'color2' : 'color1'}}" bindtap='choose5' data-text='其他'>其他</view>
+  </view>
+  <input class="input" placeholder='请输入标题（15个字以内）' maxlength='15' bindblur='getTitle' placeholder-class='inputPlaceholder'></input>
+</view>
+
+<view class="content">
+  <textarea class='article' placeholder='详细描述（200字以内）' maxlength='200' bindblur='getDetail' placeholder-class='inputPlaceholder'></textarea>
+  <view class='img'>
+    <image bindtap='getPicture' src="images/add.png"></image>
+    <image src='{{imgInfo.tempFilePaths[0]}}' class='display'></image>
+    <image src='{{imgInfo.tempFilePaths[1]}}' class='display'></image>
+    <image src='{{imgInfo.tempFilePaths[2]}}' class='display'></image>
+    <view class='line'></view>
+  </view>
+  
+  <view class='info'>
+    <label for='name'>联系人</label><input class='user_info' id='name' bindblur='getUserName'></input>
+  </view>
+  <view class='info'>
+    <label for='tel'>联系电话</label><input class='user_info' id='tel' bindblur='getTel'></input>
+  </view>
+</view>
+<view class="footer">
+  <button type='primary' bindtap='send'>发布</button>
+</view>

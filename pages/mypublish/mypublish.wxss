@@ -1,0 +1,37 @@
+.header{
+  height: 7vh;
+  background: #85C7CA;
+  position: relative;
+}
+
+.bg{
+  background: #eeeeee;
+  height: 84vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.box{
+  height: 26vh;
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+  z-index: 666;
+  position: absolute;
+  left: 5%;
+}
+.back{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 2vw;
+  top:3vw;
+}
+
+.logo {
+  width: 80px;
+  height: 88px;
+  position: absolute;
+  left:50%;
+  margin-left: -40px;
+  top:4vh;
+}

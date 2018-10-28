@@ -1,21 +1,98 @@
-/**index.wxss**/
-.userinfo {
+#container{
+  background-color: #edeff1;
+}
+
+.top{
+  width: 100%;
+  height:100rpx;
+  margin-top: 0rpx;
+  margin-left: 0rpx;
+  margin: 0;
+  padding: 0;
+  /* background-image: url('../../images/top.png'); */
+  background-color: #86c8cb;
+}
+
+.search{
+  width: 70%;
+  height: 70rpx;
+  margin-left: 15%;
+  background-color: white;
+  position: absolute;
+  top: 0rpx;
+
+}
+
+#bottom{
+  background-color: white;
+  width: 90%;
+  height: 400rpx;
+  margin-left: 5%;
+  margin-bottom: 50rpx;
+}
+
+.item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column nowrap; 
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.item-top image {
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
   border-radius: 50%;
+  margin: 10rpx 10rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.item-top {
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: space-between; */
 }
 
-.usermotto {
-  margin-top: 200px;
+.item-top-middle {
+  display: flex;
+  margin-right: 180rpx;
+  flex-flow: column nowrap;
+  width: 200rpx;
+}
+
+.item-top-middle text{
+  font-size: 30rpx;
+}
+
+.item-top-middle-top{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 10rpx 0rpx 10rpx;
+}
+
+.item-top-middle-bottom{
+  font-size: 30rpx;
+}
+
+.item-top-right{
+  height: 70rpx;
+  width: 150rpx;
+  margin-top: 40rpx;
+}
+
+.item-top-right button{
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  background-color: #c5df6c;
+  color: white;
+  border:none;
+}
+.item-middle {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.item-middle image {
+  width: 210rpx;
+  height: 210rpx;
+  margin-right: 18rpx;
 }

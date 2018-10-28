@@ -1,0 +1,10 @@
+<nav-bar navbar-data='{{navbarData}}'></nav-bar>
+<view class='header' style="margin-top:{{height}}px">
+  <view class='box'>
+  <image class='back' src='images/back.png' bindtap='back'></image>
+    <image  class="userinfo-avatar" mode="cover"></image>
+    <text class="userinfo-nickname">平行画</text>
+  </view>
+</view>
+<view class='bg'>
+</view>

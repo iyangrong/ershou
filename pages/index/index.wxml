@@ -1,13 +1,153 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view id="container">
+  <!--顶部  -->
+  <view class="top" style=""> 
+  <!--搜索栏-->
+    <view class="search">
+    <input placeholder="搜索" placeholder-class="place-holder" value="{{searchValue}}" maxlength="20" bindinput="bindKeyInput"/>
+    </view>	
+
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+
+  <!-- 物品展示  -->
+  <view id="bottom">
+    <view class='item'>
+    <view class='item-top'>
+      <view class='item-top-left'>
+        <image src='../../images/indexone.png'></image>
+      </view>
+      <view class='item-top-middle'>
+        <view class='item-top-middle-top'>
+          <text>昵称</text>
+          <text>日期</text>
+        </view>
+        <view class='item-top-middle-bottom'>
+          物品标题
+        </view>
+      </view>
+      <view class='item-top-right'>
+        <button size='mini' plain='true'>联系Ta</button>
+      </view>
+    </view>
+
+    <view class='item-middle'>
+      <image src='../../images/indexone.png'></image>
+      <image src='../../images/indexone.png'></image>
+      <image src='../../images/indexone.png'></image>
+    </view>
+
+    <view class='item-bottom'>
+      <text>#生活用品</text>
+    </view>
+
+    </view>
+  
   </view>
+
+
+  <view id="bottom">
+    <view class='item'>
+    <view class='item-top'>
+      <view class='item-top-left'>
+        <image src='../../images/indexone.png'></image>
+      </view>
+      <view class='item-top-middle'>
+        <view class='item-top-middle-top'>
+          <text>昵称</text>
+          <text>日期</text>
+        </view>
+        <view class='item-top-middle-bottom'>
+          物品标题
+        </view>
+      </view>
+      <view class='item-top-right'>
+        <button size='mini' plain='true'>联系Ta</button>
+      </view>
+    </view>
+
+    <view class='item-middle'>
+      <image src='../../images/indexone.png'></image>
+      <image src='../../images/indexone.png'></image>
+      <image src='../../images/indexone.png'></image>
+    </view>
+
+    <view class='item-bottom'>
+      <text>#生活用品</text>
+    </view>
+    
+    </view>
+  
+  </view>
+
+  <view id="bottom">
+    <view class='item'>
+    <view class='item-top'>
+      <view class='item-top-left'>
+        <image src='../../images/indexone.png'></image>
+      </view>
+      <view class='item-top-middle'>
+        <view class='item-top-middle-top'>
+          <text>昵称</text>
+          <text>日期</text>
+        </view>
+        <view class='item-top-middle-bottom'>
+          物品标题
+        </view>
+      </view>
+      <view class='item-top-right'>
+        <button size='mini' plain='true'>联系Ta</button>
+      </view>
+    </view>
+
+    <view class='item-middle'>
+      <image src='../../images/indexone.png'></image>
+      <image src='../../images/indexone.png'></image>
+      <image src='../../images/indexone.png'></image>
+    </view>
+
+    <view class='item-bottom'>
+      <text>#生活用品</text>
+    </view>
+    
+    </view>
+  
+  </view>
+
+  <view id="bottom">
+    <view class='item'>
+    <view class='item-top'>
+      <view class='item-top-left'>
+        <image src='../../images/indexone.png'></image>
+      </view>
+      <view class='item-top-middle'>
+        <view class='item-top-middle-top'>
+          <text>昵称</text>
+          <text>日期</text>
+        </view>
+        <view class='item-top-middle-bottom'>
+          物品标题
+        </view>
+      </view>
+      <view class='item-top-right'>
+        <button size='mini' plain='true'>联系Ta</button>
+      </view>
+    </view>
+
+    <view class='item-middle'>
+      <image src='../../images/indexone.png'></image>
+      <image src='../../images/indexone.png'></image>
+      <image src='../../images/indexone.png'></image>
+    </view>
+
+    <view class='item-bottom'>
+      <text>#生活用品</text>
+    </view>
+    
+    </view>
+  
+  </view>
+
 </view>
+
+
+
