@@ -10,7 +10,7 @@
 
 
   <!-- 物品展示  -->
-  <view id="bottom">
+  <view class="bottom">
     <view class='item'>
     <view class='item-top'>
       <view class='item-top-left'>
@@ -18,8 +18,9 @@
       </view>
       <view class='item-top-middle'>
         <view class='item-top-middle-top'>
-          <text>昵称</text>
-          <text>日期</text>
+          <text class="name">杨慧玲</text>
+          <text class="time">17：21</text>
+          <text class="data">10月19日</text>
         </view>
         <view class='item-top-middle-bottom'>
           物品标题
@@ -37,7 +38,8 @@
     </view>
 
     <view class='item-bottom'>
-      <text>#生活用品</text>
+      <text class="pound">#</text>
+      <view class="sign">学习用品</view>
     </view>
 
     </view>
@@ -45,7 +47,8 @@
   </view>
 
 
-  <view id="bottom">
+  <!-- 物品展示  -->
+  <view class="bottom">
     <view class='item'>
     <view class='item-top'>
       <view class='item-top-left'>
@@ -53,8 +56,9 @@
       </view>
       <view class='item-top-middle'>
         <view class='item-top-middle-top'>
-          <text>昵称</text>
-          <text>日期</text>
+          <text class="name">杨慧玲</text>
+          <text class="time">17：21</text>
+          <text class="data">10月19日</text>
         </view>
         <view class='item-top-middle-bottom'>
           物品标题
@@ -72,14 +76,16 @@
     </view>
 
     <view class='item-bottom'>
-      <text>#生活用品</text>
+      <text class="pound">#</text>
+      <view class="sign">学习用品</view>
     </view>
-    
+
     </view>
   
   </view>
 
-  <view id="bottom">
+  <!-- 物品展示  -->
+  <view class="bottom">
     <view class='item'>
     <view class='item-top'>
       <view class='item-top-left'>
@@ -87,8 +93,9 @@
       </view>
       <view class='item-top-middle'>
         <view class='item-top-middle-top'>
-          <text>昵称</text>
-          <text>日期</text>
+          <text class="name">杨慧玲</text>
+          <text class="time">17：21</text>
+          <text class="data">10月19日</text>
         </view>
         <view class='item-top-middle-bottom'>
           物品标题
@@ -106,14 +113,16 @@
     </view>
 
     <view class='item-bottom'>
-      <text>#生活用品</text>
+      <text class="pound">#</text>
+      <view class="sign">学习用品</view>
     </view>
-    
+
     </view>
   
   </view>
 
-  <view id="bottom">
+  <!-- 物品展示  -->
+  <view class="bottom">
     <view class='item'>
     <view class='item-top'>
       <view class='item-top-left'>
@@ -121,8 +130,9 @@
       </view>
       <view class='item-top-middle'>
         <view class='item-top-middle-top'>
-          <text>昵称</text>
-          <text>日期</text>
+          <text class="name">杨慧玲</text>
+          <text class="time">17：21</text>
+          <text class="data">10月19日</text>
         </view>
         <view class='item-top-middle-bottom'>
           物品标题
@@ -140,14 +150,12 @@
     </view>
 
     <view class='item-bottom'>
-      <text>#生活用品</text>
+      <text class="pound">#</text>
+      <view class="sign">学习用品</view>
     </view>
-    
+
     </view>
   
   </view>
 
 </view>
-
-
-
