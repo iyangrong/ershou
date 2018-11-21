@@ -2,16 +2,32 @@
 App({
   onLaunch: function () {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    // var logs = wx.getStorageSync('logs') || []
+    // logs.unshift(Date.now())
+    // wx.setStorageSync('logs', logs)
 
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res)        
+        let code = res.code
+        let url = `http://192.168.174.1:3000/api/v1/user/${code}`
+        wx.request({
+          url,
+          success (res) {
+            console.log(res)
+            let data = res.data
+            if (data.code === 1) {
+              wx.setStorageSync('user', data.data)
+              console.log('用户数据缓存成功')
+            }
+          }
+        })
       }
     })
+
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
